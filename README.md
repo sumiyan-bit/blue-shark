@@ -1,32 +1,55 @@
-# React + TypeScript + Vite
+# Blue Shark — Site Institucional
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Site institucional completo para o **Blue Shark**, restaurante japonês em Sorocaba/SP, desenvolvido como projeto de portfólio e proposta comercial para o cliente.
 
-Currently, two official plugins are available:
+**Site no ar:** [courageous-crisp-e4fd59.netlify.app](https://courageous-crisp-e4fd59.netlify.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Sobre o projeto
 
-## React Compiler
+O site foi construído com conteúdo real do restaurante: cardápio completo com preços, fotos autorais dos pratos e do chef, avaliações reais do Google e horário de funcionamento. O objetivo principal é apresentar o restaurante profissionalmente e converter visitantes em pedidos de delivery pelo WhatsApp.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tecnologias utilizadas
 
-## Expanding the Oxlint configuration
+- [React](https://react.dev/) 19
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS](https://tailwindcss.com/) v4
+- [Framer Motion](https://motion.dev/) (animações)
+- [Vite](https://vite.dev/) (build)
+- [Lucide Icons](https://lucide.dev/)
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+## Funcionalidades
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+- Design responsivo, com barra de navegação fixa (mobile-first)
+- Cardápio interativo com destaques e filtro por categoria
+- Pedido direto via WhatsApp, com mensagem pré-preenchida
+- Localização com mapa incorporado
+- SEO local com dados estruturados (Schema.org / Restaurant)
+- Animações leves de entrada e transições de página
+
+## Como rodar o projeto localmente
+
+```bash
+npm install
+npm run dev
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+O site abre em `http://localhost:5173` (ou na porta indicada no terminal).
+
+Para gerar a versão de produção:
+
+```bash
+npm run build
+```
+
+## Estrutura do projeto
+
+```
+src/
+  components/   → cada seção do site (Hero, Menu, Chef, Footer, etc.)
+  data/         → configurações, cardápio e imagens centralizados
+  assets/       → fotos e logo do restaurante
+```
+
+## Autor
+
+Desenvolvido por **Yan** ([@sumiyan-bit](https://github.com/sumiyan-bit)), estudante de TI e desenvolvedor de sites e automações para negócios locais.
