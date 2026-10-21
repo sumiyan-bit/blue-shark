@@ -2,6 +2,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import { images } from "../data/images";
 import { siteConfig } from "../data/siteConfig";
+import { OpenBadge } from "./ui/OpenBadge";
 
 export function Hero() {
   const ref = useRef<HTMLDivElement>(null);
@@ -61,11 +62,26 @@ export function Hero() {
           className="mt-10 flex flex-wrap items-center gap-4"
         >
           <a
+            href="#delivery"
+            className="inline-flex items-center justify-center rounded-sm bg-ocean px-8 py-4 font-body text-sm font-bold uppercase tracking-[0.2em] text-ink transition-transform hover:scale-[1.03] hover:bg-ocean-light"
+          >
+            Pedir Delivery
+          </a>
+          <a
             href="#cardapio"
             className="inline-flex items-center justify-center rounded-sm border border-paper/30 px-8 py-4 font-body text-sm font-bold uppercase tracking-[0.2em] text-paper transition-colors hover:border-ocean hover:text-ocean-light"
           >
             Conhecer o Cardápio
           </a>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.9, duration: 0.7 }}
+          className="mt-8"
+        >
+          <OpenBadge />
         </motion.div>
       </div>
     </section>

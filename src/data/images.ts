@@ -1,22 +1,22 @@
 // Banco central de imagens do site, com as fotos reais do Blue Shark.
 
-import chefPhoto from "../assets/chef.jpg";
-import heroPhoto from "../assets/hero.jpg";
-import aboutPhoto from "../assets/about.jpg";
-import menuSashimis from "../assets/menu/sashimis.jpg";
-import menuNiguiris from "../assets/menu/niguiris.jpg";
-import menuUramakis from "../assets/menu/uramakis.jpg";
-import menuHossomaki from "../assets/menu/hossomaki.jpg";
-import menuTemakis from "../assets/menu/temakis.jpg";
-import menuEspeciais from "../assets/menu/especiais.jpg";
-import menuCombinados from "../assets/menu/combinados.jpg";
-import menuQuentes from "../assets/menu/quentes.jpg";
-import insta1 from "../assets/instagram/1.jpg";
-import insta2 from "../assets/instagram/2.jpg";
-import insta3 from "../assets/instagram/3.jpg";
-import insta4 from "../assets/instagram/4.jpg";
-import insta5 from "../assets/instagram/5.jpg";
-import insta6 from "../assets/instagram/6.jpg";
+import chefPhoto from "../assets/chef.webp";
+import heroPhoto from "../assets/hero.webp";
+import aboutPhoto from "../assets/about.webp";
+import menuSashimis from "../assets/menu/sashimis.webp";
+import menuNiguiris from "../assets/menu/niguiris.webp";
+import menuUramakis from "../assets/menu/uramakis.webp";
+import menuHossomaki from "../assets/menu/hossomaki.webp";
+import menuTemakis from "../assets/menu/temakis.webp";
+import menuEspeciais from "../assets/menu/especiais.webp";
+import menuCombinados from "../assets/menu/combinados.webp";
+import menuQuentes from "../assets/menu/quentes.webp";
+import insta1 from "../assets/instagram/1.webp";
+import insta2 from "../assets/instagram/2.webp";
+import insta3 from "../assets/instagram/3.webp";
+import insta4 from "../assets/instagram/4.webp";
+import insta5 from "../assets/instagram/5.webp";
+import insta6 from "../assets/instagram/6.webp";
 
 export const images = {
   hero: heroPhoto,

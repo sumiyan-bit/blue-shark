@@ -1,5 +1,5 @@
-import { BookOpenText, ShoppingBag } from "lucide-react";
-import { ifoodUrl } from "../data/siteConfig";
+import { BookOpenText, MessageCircle, ShoppingBag } from "lucide-react";
+import { ifoodUrl, whatsappUrl } from "../data/siteConfig";
 
 export function MobileCTA() {
   return (
@@ -12,13 +12,22 @@ export function MobileCTA() {
         Cardápio
       </a>
       <a
+        href={whatsappUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="flex flex-1 flex-col items-center gap-1 border-l border-white/10 py-3 font-body text-[11px] font-medium uppercase tracking-wider text-paper/70"
+      >
+        <MessageCircle size={20} strokeWidth={1.6} />
+        WhatsApp
+      </a>
+      <a
         href={ifoodUrl}
         target="_blank"
         rel="noopener noreferrer"
         className="flex flex-[1.4] items-center justify-center gap-2 bg-ocean py-3 font-body text-[11px] font-bold uppercase tracking-wider text-ink"
       >
         <ShoppingBag size={18} strokeWidth={1.8} />
-        Pedir Delivery
+        Pedir no iFood
       </a>
     </div>
   );

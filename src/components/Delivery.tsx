@@ -1,8 +1,9 @@
-import { ShoppingBag } from "lucide-react";
+import { MessageCircle, ShoppingBag } from "lucide-react";
 import { Reveal } from "./ui/Reveal";
 import { Eyebrow } from "./ui/Eyebrow";
+import { OpenBadge } from "./ui/OpenBadge";
 import { images } from "../data/images";
-import { siteConfig, deliveryUrl } from "../data/siteConfig";
+import { siteConfig, ifoodUrl, whatsappUrl, phoneUrl } from "../data/siteConfig";
 
 export function Delivery() {
   return (
@@ -29,22 +30,34 @@ export function Delivery() {
 
           <div className="mt-10 flex flex-wrap gap-4">
             <a
-              href={deliveryUrl}
+              href={ifoodUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 rounded-sm bg-ocean px-8 py-4 font-body text-sm font-bold uppercase tracking-[0.2em] text-ink transition-transform hover:scale-[1.03] hover:bg-ocean-light"
             >
               <ShoppingBag size={18} strokeWidth={1.6} />
-              Pedir Delivery
+              Pedir no iFood
+            </a>
+            <a
+              href={whatsappUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-sm border border-paper/30 px-8 py-4 font-body text-sm font-bold uppercase tracking-[0.2em] text-paper transition-colors hover:border-ocean-light hover:text-ocean-light"
+            >
+              <MessageCircle size={18} strokeWidth={1.6} />
+              Pedir pelo WhatsApp
             </a>
           </div>
 
           <p className="mt-6 font-body text-sm text-paper/60">
-            Ou ligue/chame diretamente:{" "}
-            <a href={deliveryUrl} className="underline decoration-ocean-light/60 underline-offset-4">
+            Prefere ligar?{" "}
+            <a href={phoneUrl} className="underline decoration-ocean-light/60 underline-offset-4">
               {siteConfig.phoneDisplay}
             </a>
           </p>
+          <div className="mt-4">
+            <OpenBadge />
+          </div>
         </Reveal>
       </div>
     </section>

@@ -1,6 +1,7 @@
 import { MapPin, Phone, Clock } from "lucide-react";
 import { Reveal } from "./ui/Reveal";
 import { Eyebrow } from "./ui/Eyebrow";
+import { OpenBadge } from "./ui/OpenBadge";
 import { siteConfig, mapsEmbedUrl, mapsDirectionsUrl, whatsappUrl } from "../data/siteConfig";
 
 export function Location() {
@@ -39,6 +40,9 @@ export function Location() {
                   {siteConfig.hours.days} · {siteConfig.hours.time}
                 </p>
                 <p className="mt-1 text-sm text-ink/50">{siteConfig.hours.exception}</p>
+                <div className="mt-3">
+                  <OpenBadge tone="dark" />
+                </div>
               </div>
             </div>
           </div>

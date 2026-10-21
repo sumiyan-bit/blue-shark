@@ -1,6 +1,6 @@
 import { InstagramIcon as Instagram } from "./ui/InstagramIcon";
 import { siteConfig, fullAddress, whatsappUrl } from "../data/siteConfig";
-import logoTight from "../assets/logo-tight-transparent.png";
+import logoTight from "../assets/logo-tight-transparent.webp";
 
 const quickLinks = [
   { href: "#cardapio", label: "Cardápio" },
@@ -67,7 +67,7 @@ export function Footer() {
 
       <div className="mx-auto mt-14 max-w-7xl px-6 lg:px-10">
         <div className="border-t border-white/5 pt-6 font-body text-xs text-paper/40">
-          © {siteConfig.name}. Todos os direitos reservados.
+          © {new Date().getFullYear()} {siteConfig.name}. Todos os direitos reservados.
         </div>
       </div>
     </footer>

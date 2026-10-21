@@ -27,16 +27,17 @@ export const siteConfig = {
   },
   priceRange: "R$ 60–80 por pessoa",
 
-  // TODO: substituir pelo link direto das avaliações do Google (Google Business Profile)
-  googleReviewsUrl: "https://www.google.com/search?q=Blue+Shark+Sorocaba+avaliações",
+  // Abre o restaurante direto no Google Maps, onde ficam as avaliações.
+  // TODO: trocar pelo link de compartilhamento do Perfil da Empresa quando o dono passar.
+  googleReviewsUrl:
+    "https://www.google.com/maps/search/?api=1&query=Blue+Shark+Sushi+Rua+Orlando+Bonetti+108+Sorocaba",
 } as const;
 
 export const whatsappUrl = `https://wa.me/${siteConfig.whatsappNumber}?text=${encodeURIComponent(
   siteConfig.whatsappMessage,
 )}`;
 
-// O Blue Shark recebe pedidos tanto pelo WhatsApp quanto pelo iFood.
-export const deliveryUrl = whatsappUrl;
+export const phoneUrl = `tel:+${siteConfig.whatsappNumber}`;
 
 export const ifoodUrl =
   "https://www.ifood.com.br/delivery/sorocaba-sp/blue-shark-sushi-jardim-residencial-villa-amato/3619771a-e11c-4b9c-86d5-afadd04665ed";

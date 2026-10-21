@@ -23,6 +23,7 @@ export function InstagramSection() {
                 href={siteConfig.instagramUrl}
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label={`Ver foto ${i + 1} no Instagram do ${siteConfig.name}`}
                 className="group relative block aspect-square overflow-hidden"
               >
                 <img
