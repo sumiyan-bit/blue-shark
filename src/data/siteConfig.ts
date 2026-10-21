@@ -27,10 +27,8 @@ export const siteConfig = {
   },
   priceRange: "R$ 60–80 por pessoa",
 
-  // Abre o restaurante direto no Google Maps, onde ficam as avaliações.
-  // TODO: trocar pelo link de compartilhamento do Perfil da Empresa quando o dono passar.
-  googleReviewsUrl:
-    "https://www.google.com/maps/search/?api=1&query=Blue+Shark+Sushi+Rua+Orlando+Bonetti+108+Sorocaba",
+  // Perfil da Empresa no Google Maps, onde ficam as avaliações.
+  googleReviewsUrl: "https://maps.app.goo.gl/Gq5rNZchYvS15F1A9",
 } as const;
 
 export const whatsappUrl = `https://wa.me/${siteConfig.whatsappNumber}?text=${encodeURIComponent(
