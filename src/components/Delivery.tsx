@@ -35,7 +35,7 @@ export function Delivery() {
               className="inline-flex items-center gap-2 rounded-sm bg-ocean px-8 py-4 font-body text-sm font-bold uppercase tracking-[0.2em] text-ink transition-transform hover:scale-[1.03] hover:bg-ocean-light"
             >
               <ShoppingBag size={18} strokeWidth={1.6} />
-              Pedir Delivery pelo WhatsApp
+              Pedir Delivery
             </a>
           </div>
 

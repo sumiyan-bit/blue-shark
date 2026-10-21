@@ -35,10 +35,11 @@ export const whatsappUrl = `https://wa.me/${siteConfig.whatsappNumber}?text=${en
   siteConfig.whatsappMessage,
 )}`;
 
-// O Blue Shark recebe os pedidos de delivery pelo WhatsApp, então os dois botões
-// (Delivery e WhatsApp) apontam para o mesmo lugar. Se um dia eles passarem
-// a usar uma plataforma própria (iFood, Rappi, etc.), troque só esta linha.
+// O Blue Shark recebe pedidos tanto pelo WhatsApp quanto pelo iFood.
 export const deliveryUrl = whatsappUrl;
+
+export const ifoodUrl =
+  "https://www.ifood.com.br/delivery/sorocaba-sp/blue-shark-sushi-jardim-residencial-villa-amato/3619771a-e11c-4b9c-86d5-afadd04665ed";
 
 export const fullAddress = `${siteConfig.address.street}, ${siteConfig.address.neighborhood}, ${siteConfig.address.cityState}, ${siteConfig.address.zip}`;
 

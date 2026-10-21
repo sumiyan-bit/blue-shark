@@ -30,8 +30,15 @@ export function About() {
             <p>
               O Blue Shark nasceu da paixão inabalável do Chef Nilson Pires pela culinária
               japonesa. Com mais de 20 anos de experiência, ele construiu sua trajetória
-              valorizando o tradicional e sendo um perfeccionista nos detalhes, sem nunca
-              alterar a essência cultural dos pratos que serve.
+              valorizando o tradicional e sendo um perfeccionista nos detalhes, inclusive
+              na decisão de nunca usar maionese em suas receitas, mantendo-se fiel aos
+              princípios que definem a verdadeira culinária japonesa.
+            </p>
+            <p>
+              Até o nome do restaurante tem uma história própria. Ele veio de um sonho do
+              Chef Nilson, no qual ele já geria o restaurante e recebia as entregas em uma
+              van azul com um grande tubarão inflável preso no teto. A imagem ficou
+              gravada em sua memória e deu origem ao nome Blue Shark.
             </p>
             <p>
               Aqui, cada prato é preparado com respeito às técnicas e princípios que

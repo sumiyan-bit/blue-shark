@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
 import { Menu as MenuIcon, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import { siteConfig, deliveryUrl } from "../data/siteConfig";
+import { siteConfig, ifoodUrl } from "../data/siteConfig";
 import logoMark from "../assets/logo-mark-transparent.png";
 
 const NAV_LINKS = [
@@ -67,7 +67,7 @@ export function Header() {
 
         <div className="hidden lg:block">
           <a
-            href={deliveryUrl} target="_blank" rel="noopener noreferrer"
+            href={ifoodUrl} target="_blank" rel="noopener noreferrer"
             className="inline-flex items-center justify-center rounded-sm bg-ocean px-6 py-3 font-body text-xs font-bold uppercase tracking-[0.2em] text-ink transition-transform hover:scale-[1.03] hover:bg-ocean-light"
           >
             Pedir Delivery
@@ -125,7 +125,7 @@ export function Header() {
 
             <div className="px-9 pb-10">
               <a
-                href={deliveryUrl} target="_blank" rel="noopener noreferrer"
+                href={ifoodUrl} target="_blank" rel="noopener noreferrer"
                 onClick={() => setOpen(false)}
                 className="flex w-full items-center justify-center rounded-sm bg-ocean px-6 py-4 font-body text-sm font-bold uppercase tracking-[0.2em] text-ink"
               >

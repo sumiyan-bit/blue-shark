@@ -1,5 +1,5 @@
 import { BookOpenText, ShoppingBag } from "lucide-react";
-import { deliveryUrl } from "../data/siteConfig";
+import { ifoodUrl } from "../data/siteConfig";
 
 export function MobileCTA() {
   return (
@@ -12,7 +12,7 @@ export function MobileCTA() {
         Cardápio
       </a>
       <a
-        href={deliveryUrl}
+        href={ifoodUrl}
         target="_blank"
         rel="noopener noreferrer"
         className="flex flex-[1.4] items-center justify-center gap-2 bg-ocean py-3 font-body text-[11px] font-bold uppercase tracking-wider text-ink"
