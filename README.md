@@ -1,4 +1,4 @@
-# Blue Shark — Site Institucional
+# Blue Shark | Site Institucional
 
 Site institucional completo para o **Blue Shark**, restaurante japonês em Sorocaba/SP, desenvolvido como projeto de portfólio e proposta comercial para o cliente.
 
@@ -6,7 +6,7 @@ Site institucional completo para o **Blue Shark**, restaurante japonês em Soroc
 
 ## Sobre o projeto
 
-O site foi construído com conteúdo real do restaurante: cardápio completo com preços, fotos autorais dos pratos e do chef, avaliações reais do Google e horário de funcionamento. O objetivo principal é apresentar o restaurante profissionalmente e converter visitantes em pedidos de delivery pelo WhatsApp.
+O site foi construído com conteúdo real do restaurante: cardápio completo com preços, fotos autorais dos pratos e do chef, avaliações reais do Google e horário de funcionamento. O objetivo principal é apresentar o restaurante profissionalmente e converter visitantes em pedidos de delivery pelo iFood e pelo WhatsApp.
 
 ## Tecnologias utilizadas
 
@@ -19,10 +19,13 @@ O site foi construído com conteúdo real do restaurante: cardápio completo com
 
 ## Funcionalidades
 
-- Design responsivo, com barra de navegação fixa (mobile-first)
+- Design responsivo pensado primeiro pro celular, com barra fixa de pedido (Cardápio, WhatsApp e iFood)
 - Cardápio interativo com destaques e filtro por categoria
-- Pedido direto via WhatsApp, com mensagem pré-preenchida
-- Localização com mapa incorporado
+- Pedido pelo iFood ou direto pelo WhatsApp, com mensagem pré-preenchida
+- Selo "Aberto agora / Abre hoje às 18h / Fechado" calculado no horário de Brasília, incluindo a folga do último domingo do mês
+- Prévia com foto quando o link é compartilhado no WhatsApp e redes sociais (Open Graph)
+- Imagens em WebP redimensionadas (de 4,1 MB para 0,9 MB), carregamento rápido no 4G
+- Localização com mapa incorporado e link para as avaliações no Google
 - SEO local com dados estruturados (Schema.org / Restaurant)
 - Animações leves de entrada e transições de página
 
@@ -46,7 +49,7 @@ npm run build
 ```
 src/
   components/   → cada seção do site (Hero, Menu, Chef, Footer, etc.)
-  data/         → configurações, cardápio e imagens centralizados
+  data/         → configurações, cardápio, imagens e regra de horário centralizados
   assets/       → fotos e logo do restaurante
 ```
 
