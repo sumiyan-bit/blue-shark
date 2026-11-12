@@ -114,7 +114,8 @@ export function Menu() {
                   key={cat.id}
                   type="button"
                   onClick={() => setActiveCategory(cat.id)}
-                  className={`rounded-full px-4 py-2 font-body text-xs font-medium uppercase tracking-wider transition-colors ${
+                  aria-pressed={activeCategory === cat.id}
+                  className={`min-h-11 rounded-full px-4 py-2 font-body text-xs font-medium uppercase tracking-wider transition-colors ${
                     activeCategory === cat.id
                       ? "bg-ink text-paper"
                       : "bg-ink/5 text-ink/60 hover:bg-ink/10"
@@ -129,7 +130,7 @@ export function Menu() {
               <div className="flex items-baseline justify-between gap-4">
                 <h4 className="font-display text-2xl">{active.title}</h4>
                 {active.note && (
-                  <span className="font-body text-xs uppercase tracking-wider text-ink/50">
+                  <span className="font-body text-xs uppercase tracking-wider text-ink/65">
                     {active.note}
                   </span>
                 )}
@@ -141,7 +142,7 @@ export function Menu() {
                     <div>
                       <p className="font-body text-sm font-medium text-ink">{item.name}</p>
                       {item.description && (
-                        <p className="mt-1 font-body text-xs text-ink/55">{item.description}</p>
+                        <p className="mt-1 font-body text-xs text-ink/65">{item.description}</p>
                       )}
                     </div>
                     <p className="whitespace-nowrap font-body text-sm font-medium text-ocean-deep">

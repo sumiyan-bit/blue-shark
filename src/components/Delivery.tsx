@@ -19,7 +19,7 @@ export function Delivery() {
 
       <div className="relative mx-auto max-w-7xl px-6 lg:px-10">
         <Reveal className="max-w-xl">
-          <Eyebrow>Delivery</Eyebrow>
+          <Eyebrow tone="onOcean">Delivery</Eyebrow>
           <h2 className="text-balance mt-5 font-display text-3xl leading-tight sm:text-4xl lg:text-5xl">
             Blue Shark onde você estiver.
           </h2>

@@ -39,7 +39,7 @@ export function Location() {
                 <p>
                   {siteConfig.hours.days} · {siteConfig.hours.time}
                 </p>
-                <p className="mt-1 text-sm text-ink/50">{siteConfig.hours.exception}</p>
+                <p className="mt-1 text-sm text-ink/65">{siteConfig.hours.exception}</p>
                 <div className="mt-3">
                   <OpenBadge tone="dark" />
                 </div>
