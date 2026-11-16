@@ -45,14 +45,14 @@ export function Hero() {
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1.1, ease: [0.22, 1, 0.36, 1] }}
-          className="absolute -left-10 top-6 aspect-square w-[62%] rounded-full bg-shu/85 blur-[1px]"
+          className="absolute left-[3%] top-[12%] aspect-square w-[54%] rounded-full bg-shu/85 blur-[1px]"
         />
-        <div className="enso absolute -right-8 bottom-10 aspect-square w-[55%] text-kin" />
+        <div className="enso absolute left-[49%] top-[45%] aspect-square w-[50%] text-kin" />
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.25, duration: 1, ease: [0.22, 1, 0.36, 1] }}
-          className="absolute right-0 top-[4%] aspect-square w-[72%] overflow-hidden rounded-full border border-kin/30 shadow-2xl shadow-black/60"
+          className="absolute left-[26%] top-[4%] aspect-square w-[72%] overflow-hidden rounded-full border border-kin/30 shadow-2xl shadow-black/60"
         >
           <img
             src={combinado}
@@ -66,7 +66,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.55, duration: 1, ease: [0.22, 1, 0.36, 1] }}
-          className="absolute bottom-[10%] left-[8%] aspect-square w-[40%] overflow-hidden rounded-full border-4 border-ink shadow-xl shadow-black/60"
+          className="absolute left-[13%] top-[55%] aspect-square w-[38%] overflow-hidden rounded-full border-4 border-ink shadow-xl shadow-black/60"
         >
           <img src={images.hero} alt={images.heroAlt} className="h-full w-full object-cover" />
         </motion.div>
