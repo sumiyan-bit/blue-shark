@@ -130,16 +130,21 @@ export function Hero() {
           <OpenBadge />
         </motion.div>
 
-        {/* no celular a foto aparece abaixo, em moldura de arco */}
+        {/* no celular: mesma composição do computador, centralizada */}
         <motion.div
+          aria-hidden="true"
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.8, duration: 0.8 }}
-          className="relative mt-12 h-72 max-w-sm lg:hidden"
+          className="relative mx-auto mt-12 aspect-[10/11] w-full max-w-[340px] md:max-w-[420px] lg:hidden"
         >
-          <div aria-hidden="true" className="absolute -left-4 top-4 aspect-square w-40 rounded-full bg-shu/85" />
-          <div className="absolute right-0 top-0 aspect-square h-full overflow-hidden rounded-full border border-kin/30">
-            <img src={combinado} alt="" aria-hidden="true" className="h-full w-full object-cover" />
+          <div className="absolute left-[3%] top-[12%] aspect-square w-[54%] rounded-full bg-shu/85" />
+          <div className="enso absolute left-[45%] top-[40%] aspect-square w-[50%] text-kin" />
+          <div className="absolute left-[26%] top-[4%] aspect-square w-[72%] overflow-hidden rounded-full border border-kin/30 shadow-2xl shadow-black/60">
+            <img src={combinado} alt="" className="h-full w-full object-cover" />
+          </div>
+          <div className="absolute left-[13%] top-[55%] aspect-square w-[38%] overflow-hidden rounded-full border-4 border-ink shadow-xl shadow-black/60">
+            <img src={images.hero} alt="" loading="lazy" className="h-full w-full object-cover" />
           </div>
         </motion.div>
       </div>
