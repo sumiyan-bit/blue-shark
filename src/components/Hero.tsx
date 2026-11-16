@@ -39,7 +39,7 @@ export function Hero() {
       {/* composição de fotos (só em telas largas) */}
       <motion.div
         style={{ y }}
-        className="pointer-events-none absolute right-[4%] top-1/2 hidden h-[78vh] max-h-[680px] w-[38vw] max-w-[520px] -translate-y-[46%] lg:block"
+        className="pointer-events-none absolute right-[4%] top-1/2 hidden aspect-[10/11] w-[38vw] max-w-[520px] -translate-y-[46%] lg:block"
       >
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
@@ -52,7 +52,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.25, duration: 1, ease: [0.22, 1, 0.36, 1] }}
-          className="absolute right-0 top-[4%] aspect-square w-[82%] overflow-hidden rounded-full border border-kin/30 shadow-2xl shadow-black/60"
+          className="absolute right-0 top-[4%] aspect-square w-[72%] overflow-hidden rounded-full border border-kin/30 shadow-2xl shadow-black/60"
         >
           <img
             src={combinado}
@@ -66,7 +66,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.55, duration: 1, ease: [0.22, 1, 0.36, 1] }}
-          className="absolute bottom-[4%] left-0 aspect-square w-[40%] overflow-hidden rounded-full border-4 border-ink shadow-xl shadow-black/60"
+          className="absolute bottom-[10%] left-[8%] aspect-square w-[40%] overflow-hidden rounded-full border-4 border-ink shadow-xl shadow-black/60"
         >
           <img src={images.hero} alt={images.heroAlt} className="h-full w-full object-cover" />
         </motion.div>
