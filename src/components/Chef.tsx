@@ -11,10 +11,10 @@ export function Chef() {
           <h2 className="text-balance mt-5 font-display text-3xl leading-tight sm:text-4xl lg:text-5xl">
             Chef Nilson Pires
           </h2>
-          <p className="mt-4 font-display text-lg italic text-ocean-deep">
+          <p className="mt-4 font-display text-lg italic text-shu">
             Mais de 20 anos dedicados à culinária japonesa.
           </p>
-          <div className="mt-6 space-y-4 font-body text-base text-ink/70">
+          <div className="mt-6 space-y-5 font-body text-base text-ink/80 md:text-lg">
             <p>
               Ao longo de mais de duas décadas, Nilson Pires aprendeu a valorizar o
               tradicional e a ser um perfeccionista nos mínimos detalhes da cozinha

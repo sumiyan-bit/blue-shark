@@ -22,9 +22,9 @@ export function Footer() {
           <p className="font-body text-xs font-bold uppercase tracking-[0.2em] text-paper/50">
             Contato
           </p>
-          <ul className="mt-5 space-y-3 font-body text-sm text-paper/70">
+          <ul className="mt-4 space-y-1 font-body text-sm text-paper/70">
             <li>
-              <a href={whatsappUrl} className="hover:text-ocean-light">
+              <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="inline-block py-2 hover:text-kin">
                 {siteConfig.phoneDisplay}
               </a>
             </li>
@@ -33,7 +33,7 @@ export function Footer() {
                 href={siteConfig.instagramUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 hover:text-ocean-light"
+                className="inline-flex items-center gap-2 py-2 hover:text-kin"
               >
                 <Instagram size={15} strokeWidth={1.6} />
                 {siteConfig.instagramHandle}
@@ -46,10 +46,10 @@ export function Footer() {
           <p className="font-body text-xs font-bold uppercase tracking-[0.2em] text-paper/50">
             Links rápidos
           </p>
-          <ul className="mt-5 space-y-3 font-body text-sm text-paper/70">
+          <ul className="mt-4 space-y-1 font-body text-sm text-paper/70">
             {quickLinks.map((link) => (
               <li key={link.href}>
-                <a href={link.href} className="hover:text-ocean-light">
+                <a href={link.href} className="inline-block py-2 hover:text-kin">
                   {link.label}
                 </a>
               </li>

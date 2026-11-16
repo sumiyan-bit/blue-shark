@@ -24,7 +24,7 @@ export function OpenBadge({ tone = "light" }: { tone?: "light" | "dark" }) {
         : "bg-shu";
 
   return (
-    <span className={`inline-flex items-center gap-2 font-body text-xs font-medium uppercase tracking-[0.2em] ${text}`}>
+    <span className={`inline-flex items-center gap-2 font-body text-[12px] font-medium uppercase tracking-[0.2em] ${text}`}>
       <span aria-hidden="true" className={`h-2 w-2 rounded-full ${dot}`} />
       {LABELS[status]}
     </span>

@@ -10,12 +10,22 @@
   --color-charcoal: #12151c;
   --color-paper: #f6f3ec;
   --color-paper-dim: #d9d3c4;
-  --color-ocean: #2ca6c9;
-  --color-ocean-deep: #103a52;
-  --color-ocean-light: #8fd4e8;
-  --color-shu: #a6272b;
+  --color-shu-light: #c8343a;
+  --color-sumi: #1a1614;
+  --color-kin: #d4b483;
+  --color-shu: #b3262b;
 
   --breakpoint-xs: 420px;
+
+  /* textos maiores e mais arejados (referência: yoshis.com.br) */
+  --text-xs: 0.8125rem;
+  --text-xs--line-height: 1.5;
+  --text-sm: 1rem;
+  --text-sm--line-height: 1.6;
+  --text-base: 1.125rem;
+  --text-base--line-height: 1.7;
+  --text-lg: 1.25rem;
+  --text-lg--line-height: 1.65;
 }
 
 html {
@@ -44,7 +54,7 @@ body {
 }
 
 ::selection {
-  background-color: var(--color-ocean);
+  background-color: var(--color-kin);
   color: var(--color-ink);
 }
 
@@ -64,7 +74,7 @@ a:focus-visible,
 button:focus-visible,
 input:focus-visible,
 textarea:focus-visible {
-  outline: 2px solid var(--color-ocean);
+  outline: 2px solid var(--color-kin);
   outline-offset: 3px;
 }
 
@@ -74,3 +84,4 @@ textarea:focus-visible {
   width: 100%;
   height: 28px;
 }
+

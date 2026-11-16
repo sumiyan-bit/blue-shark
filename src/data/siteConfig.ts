@@ -21,10 +21,6 @@ export const siteConfig = {
   },
   instagramHandle: "@blueshark_sushi",
   instagramUrl: "https://www.instagram.com/blueshark_sushi/",
-  rating: {
-    value: 4.9,
-    count: 57,
-  },
   priceRange: "R$ 60–80 por pessoa",
 
   // Perfil da Empresa no Google Maps, onde ficam as avaliações.

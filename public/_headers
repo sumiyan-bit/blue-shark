@@ -1,4 +1,4 @@
-# Cabeçalhos de segurança (lidos pelo Netlify na publicação)
+# Cabeçalhos de segurança (lidos pela Cloudflare Pages na publicação; o Netlify usa o mesmo formato)
 /*
   X-Frame-Options: DENY
   X-Content-Type-Options: nosniff

@@ -28,15 +28,14 @@ export function Reviews() {
             Quem conhece, recomenda.
           </h2>
 
-          <div className="mt-8 flex flex-col items-center gap-2">
-            <span className="font-display text-5xl text-paper">{siteConfig.rating.value}</span>
-            <div className="flex gap-1 text-ocean-light" aria-hidden="true">
+          <div className="mt-8 flex flex-col items-center gap-3">
+            <div className="flex gap-1 text-kin" aria-hidden="true">
               {Array.from({ length: 5 }).map((_, i) => (
-                <Star key={i} size={20} fill="currentColor" strokeWidth={0} />
+                <Star key={i} size={22} fill="currentColor" strokeWidth={0} />
               ))}
             </div>
             <p className="font-body text-sm uppercase tracking-[0.2em] text-paper/60">
-              {siteConfig.rating.count} avaliações no Google
+              O que os clientes dizem no Google
             </p>
           </div>
         </Reveal>
@@ -46,8 +45,8 @@ export function Reviews() {
             <Reveal key={t.name} delay={i * 0.1}>
               <figure className="flex h-full flex-col justify-between border border-white/10 bg-ink-2 p-8">
                 <div>
-                  <Quote className="text-ocean" size={26} strokeWidth={1.4} aria-hidden="true" />
-                  <blockquote className="mt-5 font-body text-base leading-relaxed text-paper/85">
+                  <Quote className="text-kin" size={26} strokeWidth={1.4} aria-hidden="true" />
+                  <blockquote className="mt-5 font-body text-base leading-relaxed text-paper/90 md:text-lg">
                     “{t.quote}”
                   </blockquote>
                 </div>
@@ -64,7 +63,7 @@ export function Reviews() {
             href={siteConfig.googleReviewsUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center rounded-sm border border-paper/25 px-8 py-4 font-body text-xs font-bold uppercase tracking-[0.2em] text-paper transition-colors hover:border-ocean hover:text-ocean-light"
+            className="inline-flex items-center justify-center rounded-sm border border-paper/25 px-8 py-4 font-body text-xs font-bold uppercase tracking-[0.2em] text-paper transition-colors hover:border-kin hover:text-kin"
           >
             Ver Avaliações no Google
           </a>

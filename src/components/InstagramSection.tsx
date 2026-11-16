@@ -6,14 +6,14 @@ import { siteConfig } from "../data/siteConfig";
 
 export function InstagramSection() {
   return (
-    <section className="bg-ocean-deep py-24 lg:py-32">
+    <section className="bg-gradient-to-b from-ink via-sumi to-sumi py-24 lg:py-32">
       <div className="mx-auto max-w-7xl px-6 text-center lg:px-10">
         <Reveal className="mx-auto flex max-w-xl flex-col items-center">
           <Eyebrow tone="onOcean">Instagram</Eyebrow>
           <h2 className="text-balance mt-5 font-display text-3xl leading-tight text-paper sm:text-4xl lg:text-5xl">
             Siga o Blue Shark
           </h2>
-          <p className="mt-4 font-body text-ocean-light">{siteConfig.instagramHandle}</p>
+          <p className="mt-4 font-body text-kin">{siteConfig.instagramHandle}</p>
         </Reveal>
 
         <div className="mt-12 grid grid-cols-3 gap-2 sm:grid-cols-6 sm:gap-3">

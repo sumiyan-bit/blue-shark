@@ -16,7 +16,7 @@ export function About() {
             />
             <span
               aria-hidden="true"
-              className="enso absolute -bottom-10 -right-10 h-40 w-40 text-ocean-light lg:h-52 lg:w-52"
+              className="enso absolute -bottom-10 -right-10 h-40 w-40 text-kin lg:h-52 lg:w-52"
             />
           </div>
         </Reveal>
@@ -26,7 +26,7 @@ export function About() {
           <h2 className="text-balance mt-5 font-display text-3xl leading-tight text-paper sm:text-4xl lg:text-5xl">
             Tradição que se transforma em experiência.
           </h2>
-          <div className="mt-6 space-y-4 font-body text-base text-paper/75">
+          <div className="mt-6 space-y-5 font-body text-base text-paper/85 md:text-lg">
             <p>
               O Blue Shark nasceu da paixão inabalável do Chef Nilson Pires pela culinária
               japonesa. Com mais de 20 anos de experiência, ele construiu sua trajetória

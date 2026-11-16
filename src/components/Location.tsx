@@ -16,7 +16,7 @@ export function Location() {
 
           <div className="mt-10 space-y-8">
             <div className="flex gap-4">
-              <MapPin className="mt-1 shrink-0 text-ocean-deep" size={22} strokeWidth={1.6} />
+              <MapPin className="mt-1 shrink-0 text-shu" size={22} strokeWidth={1.6} />
               <div className="font-body text-base text-ink/75">
                 <p>{siteConfig.address.street}</p>
                 <p>{siteConfig.address.neighborhood}</p>
@@ -27,14 +27,14 @@ export function Location() {
             </div>
 
             <div className="flex gap-4">
-              <Phone className="mt-1 shrink-0 text-ocean-deep" size={22} strokeWidth={1.6} />
-              <a href={whatsappUrl} className="font-body text-base text-ink/75 hover:text-ocean-deep">
+              <Phone className="mt-1 shrink-0 text-shu" size={22} strokeWidth={1.6} />
+              <a href={whatsappUrl} className="font-body text-base text-ink/75 hover:text-shu">
                 {siteConfig.phoneDisplay}
               </a>
             </div>
 
             <div className="flex gap-4">
-              <Clock className="mt-1 shrink-0 text-ocean-deep" size={22} strokeWidth={1.6} />
+              <Clock className="mt-1 shrink-0 text-shu" size={22} strokeWidth={1.6} />
               <div className="font-body text-base text-ink/75">
                 <p>
                   {siteConfig.hours.days} · {siteConfig.hours.time}

@@ -9,6 +9,7 @@ import { InstagramSection } from "./components/InstagramSection";
 import { Location } from "./components/Location";
 import { Footer } from "./components/Footer";
 import { MobileCTA } from "./components/MobileCTA";
+import { Edge } from "./components/ui/Edge";
 
 function App() {
   return (
@@ -16,13 +17,19 @@ function App() {
       <Header />
       <main>
         <Hero />
+        <Edge dark="above" />
         <Menu />
+        <Edge dark="below" color="sumi" />
         <Delivery />
         <About />
+        <Edge dark="above" />
         <Chef />
+        <Edge dark="below" />
         <Reviews />
         <InstagramSection />
+        <Edge dark="above" color="sumi" />
         <Location />
+        <Edge dark="below" />
       </main>
       <Footer />
       <MobileCTA />

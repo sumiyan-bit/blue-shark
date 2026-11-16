@@ -47,7 +47,7 @@ export function Header() {
             <span className="font-display text-lg tracking-[0.08em] text-paper">
               {siteConfig.name.toUpperCase()}
             </span>
-            <span className="mt-1 font-body text-[10px] uppercase tracking-[0.35em] text-ocean">
+            <span className="mt-1 font-body text-[11px] uppercase tracking-[0.35em] text-kin">
               {siteConfig.tagline}
             </span>
           </span>
@@ -58,7 +58,7 @@ export function Header() {
             <a
               key={link.href}
               href={link.href}
-              className="font-body text-sm text-paper/80 transition-colors hover:text-ocean"
+              className="font-body text-sm text-paper/80 transition-colors hover:text-kin"
             >
               {link.label}
             </a>
@@ -68,7 +68,7 @@ export function Header() {
         <div className="hidden lg:block">
           <a
             href="#delivery"
-            className="inline-flex items-center justify-center rounded-sm bg-ocean px-6 py-3 font-body text-xs font-bold uppercase tracking-[0.2em] text-ink transition-transform hover:scale-[1.03] hover:bg-ocean-light"
+            className="inline-flex items-center justify-center rounded-sm bg-shu px-6 py-3 font-body text-xs font-bold uppercase tracking-[0.2em] text-paper transition-transform hover:scale-[1.03] hover:bg-shu-light"
           >
             Pedir Delivery
           </a>
@@ -127,7 +127,7 @@ export function Header() {
               <a
                 href="#delivery"
                 onClick={() => setOpen(false)}
-                className="flex w-full items-center justify-center rounded-sm bg-ocean px-6 py-4 font-body text-sm font-bold uppercase tracking-[0.2em] text-ink"
+                className="flex w-full items-center justify-center rounded-sm bg-shu px-6 py-4 font-body text-[15px] font-bold uppercase tracking-[0.2em] text-paper"
               >
                 Pedir Delivery
               </a>

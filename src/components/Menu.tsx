@@ -38,7 +38,7 @@ export function Menu() {
           <h2 className="text-balance mt-5 font-display text-3xl leading-tight sm:text-4xl lg:text-5xl">
             Destaques do Blue Shark
           </h2>
-          <p className="mt-5 font-body text-base text-ink/70">
+          <p className="mt-5 font-body text-base text-ink/80 md:text-lg">
             Um recorte das preparações mais procuradas do Blue Shark, com destaque para as
             opções com barriga de salmão, sempre elogiadas por quem já provou.
           </p>
@@ -47,9 +47,9 @@ export function Menu() {
         <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {featuredItems.map((item, i) => (
             <Reveal key={item.name} delay={i * 0.07}>
-              <article className="group flex h-full flex-col justify-between border border-ink/10 bg-white/40 p-7 transition-colors hover:border-ocean-deep/40">
+              <article className="group flex h-full flex-col justify-between border border-ink/10 bg-white/40 p-7 transition-colors hover:border-shu/40">
                 <div>
-                  <p className="font-body text-[11px] uppercase tracking-[0.25em] text-ocean-deep">
+                  <p className="font-body text-xs uppercase tracking-[0.25em] text-shu">
                     {item.category}
                   </p>
                   <h3 className="mt-3 font-display text-xl leading-snug">{item.name}</h3>
@@ -57,7 +57,7 @@ export function Menu() {
                     <p className="mt-2 font-body text-sm text-ink/60">{item.description}</p>
                   )}
                 </div>
-                <p className="mt-6 font-body text-lg font-medium text-ocean-deep">
+                <p className="mt-6 font-body text-lg font-medium text-shu">
                   {formatPrice(item.price)}
                 </p>
               </article>
@@ -96,7 +96,7 @@ export function Menu() {
           <button
             type="button"
             onClick={() => setFullMenuOpen((v) => !v)}
-            className="inline-flex items-center gap-2 rounded-sm border border-ink/20 px-8 py-4 font-body text-xs font-bold uppercase tracking-[0.2em] text-ink transition-colors hover:border-ocean-deep hover:text-ocean-deep"
+            className="inline-flex items-center gap-2 rounded-sm border border-ink/20 px-8 py-4 font-body text-xs font-bold uppercase tracking-[0.2em] text-ink transition-colors hover:border-shu hover:text-shu"
           >
             Ver Cardápio Completo
             <ChevronDown
@@ -145,7 +145,7 @@ export function Menu() {
                         <p className="mt-1 font-body text-xs text-ink/65">{item.description}</p>
                       )}
                     </div>
-                    <p className="whitespace-nowrap font-body text-sm font-medium text-ocean-deep">
+                    <p className="whitespace-nowrap font-body text-sm font-medium text-shu">
                       {formatPrice(item.price)}
                     </p>
                   </li>
