@@ -47,7 +47,7 @@ export function Hero() {
           transition={{ duration: 1.1, ease: [0.22, 1, 0.36, 1] }}
           className="absolute left-[3%] top-[12%] aspect-square w-[54%] rounded-full bg-shu/85 blur-[1px]"
         />
-        <div className="enso absolute left-[49%] top-[45%] aspect-square w-[50%] text-kin" />
+        <div className="enso absolute left-[45%] top-[40%] aspect-square w-[50%] text-kin" />
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
