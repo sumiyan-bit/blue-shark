@@ -12,18 +12,18 @@ export interface MenuCategory {
 }
 
 // Cardápio real do Blue Shark, transcrito do cardápio fornecido pelo restaurante.
-// Preços atualizados em 2026-09-30 para bater com o cardápio do iFood.
+// Preços atualizados em 2026-09-30 e 2026-11-16 para bater com o cardápio do iFood.
 export const menuData: MenuCategory[] = [
   {
     id: "entradas",
     title: "Entradas",
     items: [
-      { name: "Sunomono", description: "Pepino, cenoura, wakame, harusame", price: 12.9 },
+      { name: "Sunomono", description: "Pepino, cenoura, wakame, harusame", price: 15.9 },
       { name: "Misso Shiro", description: "Cebolinha, pasta de soja, wakame", price: 15.9 },
       { name: "Shimeji", description: "Shimeji na manteiga, cebolinha", price: 29.9 },
       { name: "Guiosa de Porco", description: "6 unidades · molho ponzu, óleo de gergelim", price: 25.9 },
       { name: "Carpaccio de Salmão", description: "Limão, azeite, gergelim, sal rosa, tomate cereja, cebolinha", price: 33.9 },
-      { name: "Ussuzukuri de Peixe Branco", description: "Molho ponzu, tomate cereja, cebolinha, furikake", price: 29.9 },
+      { name: "Ussuzukuri de Peixe Branco", description: "Molho ponzu, tomate cereja, cebolinha, furikake", price: 33.9 },
       { name: "Ceviche", description: "Mix de peixe, leite de tigre, cebola roxa, tomate cereja, coentro, azeite extra virgem", price: 43.9 },
       { name: "Gohan", description: "Arroz japonês", price: 13.9 },
       { name: "Hot Roll de Salmão", description: "10 unidades · cream cheese, kani kama, teriaki, cebolinha", price: 34.9 },
@@ -71,7 +71,7 @@ export const menuData: MenuCategory[] = [
     note: "4 unidades",
     items: [
       { name: "Niguiri de Salmão", price: 25.9 },
-      { name: "Niguiri de Peixe Branco", price: 20.9 },
+      { name: "Niguiri de Peixe Branco", price: 24.9 },
       { name: "Niguiri de Kani Kama", price: 23.9 },
       { name: "Niguiri de Skin", description: "Skin, limão, cream cheese, cebolinha", price: 27.9 },
       { name: "Niguiri de Barriga de Salmão", description: "Azeite trufado, flor de sal", price: 27.9 },
@@ -100,7 +100,7 @@ export const menuData: MenuCategory[] = [
     note: "5 fatias",
     items: [
       { name: "Salmão", price: 33.9 },
-      { name: "Peixe Branco", price: 24.9 },
+      { name: "Peixe Branco", price: 28.9 },
       { name: "Barriga de Salmão", description: "Azeite trufado, flor de sal", price: 34.9 },
       { name: "Sashimi Mix", description: "15 fatias variadas", price: 64.9 },
     ],
@@ -172,7 +172,7 @@ export const menuData: MenuCategory[] = [
       { name: "Chá Matte Leão", price: 8.9 },
       { name: "Suco Del Valle", description: "Sabores variados", price: 9.9 },
       { name: "Yai Chá", description: "Sabores variados", price: 9.9 },
-      { name: "Cerveja Antarctica Original", price: 9.9 },
+      { name: "Cerveja Antarctica Original", price: 12.9 },
       { name: "Heineken", price: 13.9 },
       { name: "Sprite Absolut", price: 12.9 },
       { name: "Jack & Coke", price: 12.9 },
